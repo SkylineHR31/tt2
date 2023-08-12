@@ -1,9 +1,8 @@
-import { Card, CardContent, Container, Typography } from '@mui/material';
-import logo from '../assets/images/cybellum-logo-vertical-black.svg';
-import HomePage from '../pages/HomePage/HomePage';
-import Styled from './app.styled';
+import { Grid } from '@mui/material';
+// import logo from '../assets/images/cybellum-logo-vertical-black.svg';
+// import Styled from './app.styled';
 
-function App() {
+function LoginForm() {
   return (
     // <Styled.Box>
     //   <Card sx={{ maxWidth: 345, textAlign: 'center' }}>
@@ -18,10 +17,12 @@ function App() {
     //     </CardContent>
     //   </Card>
     // </Styled.Box>
-    <Container maxWidth="xl">
-      <HomePage />
-    </Container>
+    <Grid container spacing={4}>
+        <Grid item xs={12}>
+            
+        </Grid>
+    </Grid>
   );
 }
 
-export default App;
+export default LoginForm;

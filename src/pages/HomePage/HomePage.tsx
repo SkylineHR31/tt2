@@ -1,9 +1,9 @@
-import { Card, CardContent, Container, Typography } from '@mui/material';
-import logo from '../assets/images/cybellum-logo-vertical-black.svg';
-import HomePage from '../pages/HomePage/HomePage';
-import Styled from './app.styled';
+import { Grid } from '@mui/material';
+// import logo from '../assets/images/cybellum-logo-vertical-black.svg';
+import Styled from './styled';
+import imac from "../../assets/images/imac_dig_twins.png";
 
-function App() {
+function HomePage() {
   return (
     // <Styled.Box>
     //   <Card sx={{ maxWidth: 345, textAlign: 'center' }}>
@@ -18,10 +18,12 @@ function App() {
     //     </CardContent>
     //   </Card>
     // </Styled.Box>
-    <Container maxWidth="xl">
-      <HomePage />
-    </Container>
+    <Grid container spacing={4} position="relative" minHeight="900px" overflow="hidden">
+        <Grid item xs={12}>
+            <Styled.Image src={imac} alt="imac" />
+        </Grid>
+    </Grid>
   );
 }
 
-export default App;
+export default HomePage;
